@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*-- Cores --*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap");
+/* Configurações universais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #121011;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  border: 1px solid black;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+}
+header .logo {
+  text-transform: uppercase;
+  color: #121011;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+header .logo i {
+  color: #ff6d46;
+  font-size: 24px;
+}
+header #menu-icon {
+  font-size: 24px;
+  color: #121011;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+header .navbar .nav-list {
+  display: flex;
+}
+header .navbar .nav-list li a {
+  padding: 8px 17px;
+  color: #121011;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header .navbar .nav-list li a:hover {
+  color: #ff6d46;
+}
+header .header-icons {
+  font-size: 20px;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10000;
+}
+header .header-icons .bx {
+  background-color: #ff6d46;
+  padding: 7px;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+header .header-icons .bx:hover {
+  background-color: orangered;
+}
+header .header-icons .bx-cart-add {
+  position: relative;
+}
+header .header-icons span {
+  background-color: black;
+  top: -7px;
+  right: -7px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}/*# sourceMappingURL=style.css.map */

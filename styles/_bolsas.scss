@@ -1,0 +1,96 @@
+header {
+  border: 1px solid black;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: $cor-background;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+
+  .logo {
+    text-transform: uppercase;
+    color: $cor-texto;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    i {
+      color: $cor-principal;
+      font-size: 24px;
+    }
+  }
+
+  #menu-icon {
+    font-size: 24px;
+    color: $cor-texto;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+
+  .navbar .nav-list {
+    display: flex;
+
+    li a {
+      padding: 8px 17px;
+      color: $cor-texto;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    li a:hover {
+      color: $cor-principal;
+    }
+  }
+
+  .header-icons {
+    font-size: 20px;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+
+    .bx {
+      background-color: $cor-principal;
+      padding: 7px;
+      color: #fff;
+      border-radius: 0.4rem;
+    }
+
+    .bx:hover {
+      background-color: orangered;
+    }
+
+    .bx-cart-add {
+      position: relative;
+    }
+
+    span {
+      background-color: black;
+      top: -7px;
+      right: -7px;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      border-radius: 50%;
+      font-weight: 600;
+      color: $cor-background;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+
+  }
+}
