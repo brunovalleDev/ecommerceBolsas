@@ -93,4 +93,25 @@ header {
 
 
   }
+
+  .search-box {
+    position: absolute;
+    top: 110%;
+    right: 1rem;
+    width: 280px;
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 20px;
+      color: $cor-principal;
+    }
+
+    input::placeholder {
+      font-weight: bold;
+      font-size: 1rem; 
+    }
+  }
+
 }
