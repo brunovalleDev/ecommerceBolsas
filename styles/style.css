@@ -109,8 +109,9 @@ header .header-icons span {
 header .search-box {
   position: absolute;
   top: 110%;
-  right: 1rem;
+  right: 100rem;
   width: 280px;
+  transition: 0.3s all linear;
 }
 header .search-box input {
   border: none;
@@ -130,4 +131,8 @@ header .search-box input:-ms-input-placeholder {
 header .search-box input::placeholder {
   font-weight: bold;
   font-size: 1rem;
+}
+header .active {
+  right: 1rem;
+  transition: 0.2s all linear;
 }/*# sourceMappingURL=style.css.map */
