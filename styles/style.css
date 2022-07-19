@@ -24,6 +24,10 @@ img {
   width: 100%;
 }
 
+section {
+  padding: 50px 100px;
+}
+
 header {
   border: 1px solid black;
   z-index: 9999;
@@ -109,7 +113,7 @@ header .header-icons span {
 header .search-box {
   position: absolute;
   top: 110%;
-  right: 100rem;
+  right: -100rem;
   width: 280px;
   transition: 0.3s all linear;
 }
@@ -134,5 +138,14 @@ header .search-box input::placeholder {
 }
 header .active {
   right: 1rem;
-  transition: 0.2s all linear;
+}
+
+.home {
+  width: 100%;
+  display: grid;
+  min-height: 740px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
