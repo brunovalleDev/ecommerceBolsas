@@ -169,16 +169,20 @@ header {
   }
 
   .img-home {
-    animation: float 8s linear infinite;
+    animation: float 4s linear infinite;
   }
 
   @keyframes float {
     0% {
-      transform: translateX(0rem);
+      transform: translateY(-3.5rem);
     }
 
-    33% {
-      transform: translateX(5rem);
+    50% {
+      transform: translateY(3.5rem);
+    }
+
+    100% {
+      transform: translateY(-3.5rem);
     }
 
   }
