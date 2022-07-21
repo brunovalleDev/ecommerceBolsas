@@ -29,7 +29,6 @@ section {
 }
 
 header {
-  border: 1px solid black;
   z-index: 9999;
   position: fixed;
   width: 100%;
@@ -143,9 +142,55 @@ header .active {
 .home {
   width: 100%;
   display: grid;
-  min-height: 740px;
-  display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  min-height: 740px;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+  background-color: #ecfdf8;
   gap: 1.5rem;
+}
+.home .text-home h3 {
+  text-transform: uppercase;
+  color: #ff6d46;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.home .text-home h1 {
+  font-size: 3.4rem;
+  letter-spacing: 1px;
+}
+.home .text-home h1 span {
+  color: #ff6d46;
+}
+.home .text-home p {
+  max-width: 80%;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+.home .text-home a {
+  background-color: #ff6d46;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+.home .img-home {
+  -webkit-animation: float 8s linear infinite;
+          animation: float 8s linear infinite;
+}
+@-webkit-keyframes float {
+  0% {
+    transform: translateX(0rem);
+  }
+  33% {
+    transform: translateX(5rem);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateX(0rem);
+  }
+  33% {
+    transform: translateX(5rem);
+  }
 }/*# sourceMappingURL=style.css.map */
